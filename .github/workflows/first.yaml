@@ -1,0 +1,12 @@
+name: "Test workflow"
+on: 
+    push:
+        branches:
+            - master
+
+jobs:
+    testing:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Greeting"
+              run: echo "Hello everyone"
